@@ -1,0 +1,10 @@
+{% extends "base" %}
+
+{% block content %}
+<form action="/" method="POST" enctype="multipart/form-data">
+<div class="overflow-auto">
+    <textarea type="text" name="content" id="content", rows = "25"></textarea>
+</div>
+    <button type="submit">Submit</button>
+</form>
+{% endblock content %}

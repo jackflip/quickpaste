@@ -1,0 +1,7 @@
+{% extends "base" %}
+
+{% block content %}
+    {% for paste in pastes %}
+        <li><a href="/{{paste}}">{{ paste }}</a></li>
+    {% endfor %}
+{% endblock content %}

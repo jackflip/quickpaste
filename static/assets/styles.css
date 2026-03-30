@@ -1,0 +1,32 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  padding-right: 10px;
+}
+
+.title-bar {
+  padding-top: 50px;
+  padding-right:  50px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.title {
+   color:white;
+   background-color: none;
+}
+
+.copyright {
+  padding-left: 50px;
+}
+
+.hljs {
+    height: 100vh;
+    background-color: rgb(26, 30.5, 40.25) !important;
+}

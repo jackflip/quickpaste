@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.min.css">
+    <hgroup>
+
+    <div class="title-bar">
+        <div class="navbar">
+            <nav>
+                <li><a href="/recent">Recents</a></li>
+            </nav>
+        </div>
+        <a href="/" style="text-decoration:none;"><div class="title"><h1>QuickPaste</h1></div></a>
+    </div>
+    </hgroup>
+    <meta charset="utf-8" />
+    <title>QuickPaste</title>
+    {% block head %}{% endblock head %}
+    </head>
+    <main>
+    <div class="container">
+        {% block content %}{% endblock content %}
+    </div>
+    <footer>
+    <small>
+        {% block footer %}
+        <div class="copyright">
+            &copy; Copyright 2026 by <a href="http://github.com/jackflip">Jack</a>.
+        </div>
+        {% endblock footer %}
+    </small>
+    </footer>
+    </main>
+</html>

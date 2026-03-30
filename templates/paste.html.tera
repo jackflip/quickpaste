@@ -1,0 +1,19 @@
+{% extends "base" %}
+
+{% block head %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.9.0/highlightjs-line-numbers.min.js"></script>
+    <script>
+
+        hljs.highlightAll();
+
+        hljs.initLineNumbersOnLoad({
+            singleLine: true
+        });
+	</script>
+{% endblock head %}
+
+{% block content %}
+    <pre class="paste-content"><code>{{ content }}</code></pre>
+{% endblock content %}
